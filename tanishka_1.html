@@ -1,0 +1,56 @@
+<html>
+    <script>
+        function adding_two_numbers(){
+            num1=Number(document.getElementById("num1").value)
+            num2=Number(document.getElementById("num2").value)
+            //alert("the sum of two numbers is "+(num1 + num2))
+            var h1=document.createElement("h1")
+            h1.innerHTML="the sum of two numbers is "+(num1 + num2)
+            document.body.appendChild(h1)
+            
+        }
+        function substracting_two_numbers(){
+            num1=Number(document.getElementById("num1").value)
+            num2=Number(document.getElementById("num2").value)
+            //alert("the sum of two numbers is "-(num1 - num2))
+            var h1=document.createElement("h1")
+            h1.innerHTML="the difference of two numbers is "+(num1 - num2)
+            document.body.appendChild(h1)
+            
+        }
+        function multiplying_two_numbers(){
+            num1=Number(document.getElementById("num1").value)
+            num2=Number(document.getElementById("num2").value)
+            //alert("the sum of two numbers is "-(num1 - num2))
+            var h1=document.createElement("h1")
+            h1.innerHTML="the sum of two numbers is "+(num1 * num2)
+            document.body.appendChild(h1)
+            
+        }
+        function dividing_two_numbers(){
+            num1=Number(document.getElementById("num1").value)
+            num2=Number(document.getElementById("num2").value)
+            //alert("the remainder of two numbers is "-(num1 / num2))
+            var h1=document.createElement("h1")
+            h1.innerHTML="the remainder of two numbers is "+(num1 / num2)
+            document.body.appendChild(h1)
+            
+        }
+        
+        
+    </script>
+    <body>
+        
+        <input type="number" id="num1"> 
+        <br>
+        <input type="number" id="num2">
+        <br>
+        <button onclick="adding_two_numbers()">add two numbers</button>
+        <br>
+        <button onclick="substracting_two_numbers()">substracting two numbers</button>
+        <br>
+        <button onclick="multiplying_two_numbers()">multiplying_two_numbers two numbers</button>
+        <br>
+        <button onclick="dividing_two_numbers()">dividing_two_numbers two numbers</button>
+    </body>
+</html>
